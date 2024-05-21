@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gestión de Inventario José Cuervo</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  .container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+  }
+  header {
+    background: #50b3a2;
+    color: white;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+  }
+  header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+  header ul {
+    padding: 0;
+    list-style: none;
+  }
+  header ul li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+  }
+  header #branding {
+    float: left;
+  }
+  header #branding h1 {
+    margin: 0;
+  }
+  header nav {
+    float: right;
+    margin-top: 10px;
+  }
+  header .highlight, header .current a {
+    color: #e8491d;
+    font-weight: bold;
+  }
+  header a:hover {
+    color: #ffffff;
+    font-weight: bold;
+  }
+  .search-bar {
+    margin: 20px 0;
+  }
+  .search-bar input[type="text"] {
+    width: calc(100% - 100px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .search-bar input[type="submit"] {
+    padding: 10px 20px;
+    background: #50b3a2;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .search-bar input[type="submit"]:hover {
+    background: #45a094;
+  }
+  .form-container {
+    background: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .form-container input[type="text"], .form-container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .form-container input[type="submit"] {
+    background: #50b3a2;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  .form-container input[type="submit"]:hover {
+    background: #45a094;
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #50b3a2;
+    color: white;
+    margin-top: 20px;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div id="branding">
+        <h1><span class="highlight">José Cuervo</span> Gestión de Inventario</h1>
+      </div>
+      <nav>
+        <ul>
+          <li class="current"><a href="index.html">Inicio</a></li>
+          <li><a href="about.html">inventario</a></li>
+          <li><a href="services.html">Salida de equipos</a></li>
+          <li><a href="contact.html">Reportes</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="container">
+    <!-- Barra de búsqueda -->
+    <div class="search-bar">
+      <form action="#">
+        <input type="text" placeholder="Buscar por número de serie..." id="search-bar">
+        <input type="submit" value="Buscar">
+      </form>
+    </div>
+
+    <!-- Formulario para agregar nuevos equipos -->
+    <div class="form-container">
+      <h2>Agregar Nuevo Equipo</h2>
+      <form action="#">
+        <input type="text" placeholder="Número de serie" id="serial-number">
+        <input type="text" placeholder="Modelo" id="model">
+        <input type="text" placeholder="Persona asignada" id="assigned-person">
+        <input type="submit" value="Agregar Equipo">
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>José Cuervo © 2024</p>
+  </footer>
+</body>
+</html>
