@@ -83,7 +83,7 @@
     border: 1px solid #ccc;
     border-radius: 5px;
   }
-  .form-container input[type="text"], .form-container input[type="submit"] {
+  .form-container input[type="text"], .form-container input[type="submit"], .form-container textarea {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
@@ -117,9 +117,9 @@
       <nav>
         <ul>
           <li class="current"><a href="index.html">Inicio</a></li>
-          <li><a href="about.html">inventario</a></li>
-          <li><a href="services.html">Salida de equipos</a></li>
-          <li><a href="contact.html">Reportes</a></li>
+          <li><a href="about.html">Acerca de</a></li>
+          <li><a href="services.html">Servicios</a></li>
+          <li><a href="contact.html">Contacto</a></li>
         </ul>
       </nav>
     </div>
@@ -141,6 +141,7 @@
         <input type="text" placeholder="Número de serie" id="serial-number">
         <input type="text" placeholder="Modelo" id="model">
         <input type="text" placeholder="Persona asignada" id="assigned-person">
+        <textarea placeholder="Condiciones del equipo" id="equipment-condition"></textarea>
         <input type="submit" value="Agregar Equipo">
       </form>
     </div>
@@ -149,5 +150,11 @@
   <footer>
     <p>José Cuervo © 2024</p>
   </footer>
+ 
+  <!-- Scripts para CKEditor -->
+  <script src="https://cdn.ckeditor.com/4.16.0/standard/ckeditor.js"></script>
+  <script>
+    CKEDITOR.replace('equipment-condition');
+  </script>
 </body>
 </html>
